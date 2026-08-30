@@ -18,6 +18,7 @@ docs/
 
 *.xml
 !tests/fixtures/real_scan_small.xml
+!data/allthefails.xml
 
 plans/random_plan.json
 plans/severity_plan.json

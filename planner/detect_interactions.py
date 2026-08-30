@@ -4,7 +4,8 @@ HIGH_RISK_FILE_PATTERNS = [
     '/boot/', 
     '/etc/crontab', 
     '/etc/cron', 
-    '/etc/at.allow'
+    '/etc/at.allow',
+    '/etc/pam.d/'
 ]
 
 def find_candidate_interactions(controls: list) -> list:

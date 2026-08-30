@@ -1,0 +1,131 @@
+controls:
+  # --- THE CONFLICT PAIR ---
+  - id: firewalld_loopback_traffic_restricted
+    xccdf_id: xccdf_org.ssgproject.content_rule_firewalld_loopback_traffic_restricted
+    title: "Restrict Loopback Traffic"
+    reason: "Restricts loopback interface to prevent spoofing."
+    severity: medium
+    disruption_risk: high
+    touches:
+      - {type: service, name: firewalld}
+    depends_on: []
+    conflicts_with: [firewalld_loopback_traffic_trusted]
+    rollback_available: true
+    ansible_task_ref: "playbooks/almalinux9-playbook-cis_server_l1.yml#firewalld_loopback_traffic_restricted"
+    health_checks: ["firewalld_active"]
+
+  - id: firewalld_loopback_traffic_trusted
+    xccdf_id: xccdf_org.ssgproject.content_rule_firewalld_loopback_traffic_trusted
+    title: "Trust Loopback Traffic"
+    reason: "Sets loopback interface to trusted, natively conflicting with restriction rules."
+    severity: medium
+    disruption_risk: high
+    touches:
+      - {type: service, name: firewalld}
+    depends_on: []
+    conflicts_with: [firewalld_loopback_traffic_restricted]
+    rollback_available: true
+    ansible_task_ref: "playbooks/almalinux9-playbook-cis_server_l1.yml#firewalld_loopback_traffic_trusted"
+    health_checks: ["firewalld_active"]
+
+  # --- DEPENDENCY PAIR 1 (Package -> Cron) ---
+  - id: package_aide_installed
+    xccdf_id: xccdf_org.ssgproject.content_rule_package_aide_installed
+    title: "Install AIDE"
+    reason: "Provides file integrity monitoring base package."
+    severity: medium
+    disruption_risk: medium
+    touches:
+      - {type: package, name: aide}
+    depends_on: []
+    conflicts_with: []
+    rollback_available: true
+    ansible_task_ref: "playbooks/almalinux9-playbook-cis_server_l1.yml#package_aide_installed"
+    health_checks: ["aide_binary_exists"]
+
+  - id: aide_periodic_cron_checking
+    xccdf_id: xccdf_org.ssgproject.content_rule_aide_periodic_cron_checking
+    title: "Configure AIDE Cron"
+    reason: "Schedules periodic AIDE checks. Logically fails if AIDE is not installed."
+    severity: medium
+    disruption_risk: high
+    touches:
+      - {type: file, name: /etc/crontab}
+    depends_on: [package_aide_installed]
+    conflicts_with: []
+    rollback_available: true
+    ansible_task_ref: "playbooks/almalinux9-playbook-cis_server_l1.yml#aide_periodic_cron_checking"
+    health_checks: ["crond_active"]
+
+  # --- DEPENDENCY PAIR 2 (PAM Auth Sequencing) ---
+  - id: accounts_passwords_pam_faillock_deny
+    xccdf_id: xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_deny
+    title: "Set PAM Faillock Deny"
+    reason: "Configures account lockout threshold in PAM."
+    severity: medium
+    disruption_risk: high
+    touches:
+      - {type: file, name: /etc/pam.d/system-auth}
+    depends_on: []
+    conflicts_with: []
+    rollback_available: true
+    ansible_task_ref: "playbooks/almalinux9-playbook-cis_server_l1.yml#accounts_passwords_pam_faillock_deny"
+    health_checks: ["ssh_reachable"]
+
+  - id: accounts_passwords_pam_faillock_unlock_time
+    xccdf_id: xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_unlock_time
+    title: "Set PAM Faillock Unlock Time"
+    reason: "Configures lockout duration. Sequentially modifies the same PAM file."
+    severity: medium
+    disruption_risk: high
+    touches:
+      - {type: file, name: /etc/pam.d/system-auth}
+    depends_on: [accounts_passwords_pam_faillock_deny]
+    conflicts_with: []
+    rollback_available: true
+    ansible_task_ref: "playbooks/almalinux9-playbook-cis_server_l1.yml#accounts_passwords_pam_faillock_unlock_time"
+    health_checks: ["ssh_reachable"]
+
+  # --- STANDALONE CONTROLS ---
+  - id: sshd_disable_root_login
+    xccdf_id: xccdf_org.ssgproject.content_rule_sshd_disable_root_login
+    title: "Disable SSH Root Login"
+    reason: "Prevents direct remote root authentication."
+    severity: high
+    disruption_risk: high
+    touches:
+      - {type: file, name: /etc/ssh/sshd_config}
+      - {type: service, name: sshd}
+    depends_on: []
+    conflicts_with: []
+    rollback_available: true
+    ansible_task_ref: "playbooks/almalinux9-playbook-cis_server_l1.yml#sshd_disable_root_login"
+    health_checks: ["ssh_reachable"]
+
+  - id: accounts_tmout
+    xccdf_id: xccdf_org.ssgproject.content_rule_accounts_tmout
+    title: "Set Interactive Session Timeout"
+    reason: "Logs out idle users automatically."
+    severity: low
+    disruption_risk: low
+    touches:
+      - {type: file, name: /etc/profile}
+    depends_on: []
+    conflicts_with: []
+    rollback_available: true
+    ansible_task_ref: "playbooks/almalinux9-playbook-cis_server_l1.yml#accounts_tmout"
+    health_checks: []
+
+  - id: accounts_umask_etc_profile
+    xccdf_id: xccdf_org.ssgproject.content_rule_accounts_umask_etc_profile
+    title: "Set Default Umask"
+    reason: "Ensures default permissions restrict global access."
+    severity: low
+    disruption_risk: low
+    touches:
+      - {type: file, name: /etc/profile}
+    depends_on: []
+    conflicts_with: []
+    rollback_available: true
+    ansible_task_ref: "playbooks/almalinux9-playbook-cis_server_l1.yml#accounts_umask_etc_profile"
+    health_checks: []

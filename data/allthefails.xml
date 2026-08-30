@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arf:asset-report-collection xmlns:arf="http://scap.nist.gov/schema/asset-reporting-format/1.1" xmlns:core="http://scap.nist.gov/schema/reporting-core/1.1" xmlns:ai="http://scap.nist.gov/schema/asset-identification/1.1">
+          
+          
+          
+          <rule-result idref="xccdf_org.ssgproject.content_rule_package_aide_installed" role="full" time="2026-08-19T23:15:09+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-package_aide_installed:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_aide_build_database" role="full" time="2026-08-19T23:15:09+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-aide_build_database:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_aide_check_audit_tools" role="full" time="2026-08-19T23:15:09+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-aide_check_audit_tools:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_aide_periodic_cron_checking" role="full" time="2026-08-19T23:15:09+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-aide_periodic_cron_checking:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_accounts_password_pam_modules_in_authselect_profile" role="full" time="2026-08-19T23:15:09+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-accounts_password_pam_modules_in_authselect_profile:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_account_password_pam_faillock_password_auth" role="full" time="2026-08-19T23:15:09+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-account_password_pam_faillock_password_auth:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_account_password_pam_faillock_system_auth" role="full" time="2026-08-19T23:15:09+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-account_password_pam_faillock_system_auth:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_accounts_password_pam_pwhistory_enforce_for_root" role="full" time="2026-08-19T23:15:09+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-accounts_password_pam_pwhistory_enforce_for_root:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_accounts_password_pam_pwhistory_remember_password_auth" role="full" time="2026-08-19T23:15:09+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-var_password_pam_remember_control_flag:var:1" value-id="xccdf_org.ssgproject.content_value_var_password_pam_remember_control_flag"/>
+              <check-export export-name="oval:ssg-var_password_pam_remember:var:1" value-id="xccdf_org.ssgproject.content_value_var_password_pam_remember"/>
+              <check-content-ref name="oval:ssg-accounts_password_pam_pwhistory_remember_password_auth:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_accounts_password_pam_pwhistory_remember_system_auth" role="full" time="2026-08-19T23:15:09+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-var_password_pam_remember_control_flag:var:1" value-id="xccdf_org.ssgproject.content_value_var_password_pam_remember_control_flag"/>
+              <check-export export-name="oval:ssg-var_password_pam_remember:var:1" value-id="xccdf_org.ssgproject.content_value_var_password_pam_remember"/>
+              <check-content-ref name="oval:ssg-accounts_password_pam_pwhistory_remember_system_auth:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_deny" role="full" time="2026-08-19T23:15:09+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-var_accounts_passwords_pam_faillock_deny:var:1" value-id="xccdf_org.ssgproject.content_value_var_accounts_passwords_pam_faillock_deny"/>
+              <check-content-ref name="oval:ssg-accounts_passwords_pam_faillock_deny:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_unlock_time" role="full" time="2026-08-19T23:15:09+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-var_accounts_passwords_pam_faillock_unlock_time:var:1" value-id="xccdf_org.ssgproject.content_value_var_accounts_passwords_pam_faillock_unlock_time"/>
+              <check-content-ref name="oval:ssg-accounts_passwords_pam_faillock_unlock_time:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_accounts_password_pam_dictcheck" role="full" time="2026-08-19T23:15:09+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-var_password_pam_dictcheck:var:1" value-id="xccdf_org.ssgproject.content_value_var_password_pam_dictcheck"/>
+              <check-content-ref name="oval:ssg-accounts_password_pam_dictcheck:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_accounts_password_pam_difok" role="full" time="2026-08-19T23:15:09+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-var_password_pam_difok:var:1" value-id="xccdf_org.ssgproject.content_value_var_password_pam_difok"/>
+              <check-content-ref name="oval:ssg-accounts_password_pam_difok:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_accounts_password_pam_enforce_root" role="full" time="2026-08-19T23:15:09+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-accounts_password_pam_enforce_root:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_accounts_password_pam_maxrepeat" role="full" time="2026-08-19T23:15:09+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-var_password_pam_maxrepeat:var:1" value-id="xccdf_org.ssgproject.content_value_var_password_pam_maxrepeat"/>
+              <check-content-ref name="oval:ssg-accounts_password_pam_maxrepeat:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_accounts_password_pam_maxsequence" role="full" time="2026-08-19T23:15:09+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-var_password_pam_maxsequence:var:1" value-id="xccdf_org.ssgproject.content_value_var_password_pam_maxsequence"/>
+              <check-content-ref name="oval:ssg-accounts_password_pam_maxsequence:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_accounts_password_pam_minclass" role="full" time="2026-08-19T23:15:09+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-var_password_pam_minclass:var:1" value-id="xccdf_org.ssgproject.content_value_var_password_pam_minclass"/>
+              <check-content-ref name="oval:ssg-accounts_password_pam_minclass:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_accounts_password_pam_minlen" role="full" time="2026-08-19T23:15:09+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-var_password_pam_minlen:var:1" value-id="xccdf_org.ssgproject.content_value_var_password_pam_minlen"/>
+              <check-content-ref name="oval:ssg-accounts_password_pam_minlen:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_account_disable_post_pw_expiration" role="full" time="2026-08-19T23:15:09+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-var_account_disable_post_pw_expiration:var:1" value-id="xccdf_org.ssgproject.content_value_var_account_disable_post_pw_expiration"/>
+              <check-content-ref name="oval:ssg-account_disable_post_pw_expiration:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_accounts_maximum_age_login_defs" role="full" time="2026-08-19T23:15:09+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-var_accounts_maximum_age_login_defs:var:1" value-id="xccdf_org.ssgproject.content_value_var_accounts_maximum_age_login_defs"/>
+              <check-content-ref name="oval:ssg-accounts_maximum_age_login_defs:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_no_empty_passwords" role="full" time="2026-08-19T23:15:09+01:00" severity="high" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-no_empty_passwords:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_ensure_pam_wheel_group_empty" role="full" time="2026-08-19T23:15:09+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-var_pam_wheel_group_for_su:var:1" value-id="xccdf_org.ssgproject.content_value_var_pam_wheel_group_for_su"/>
+              <check-content-ref name="oval:ssg-ensure_pam_wheel_group_empty:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_no_invalid_shell_accounts_unlocked" role="full" time="2026-08-19T23:15:10+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-no_invalid_shell_accounts_unlocked:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_use_pam_wheel_group_for_su" role="full" time="2026-08-19T23:15:10+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-var_pam_wheel_group_for_su:var:1" value-id="xccdf_org.ssgproject.content_value_var_pam_wheel_group_for_su"/>
+              <check-content-ref name="oval:ssg-use_pam_wheel_group_for_su:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_accounts_tmout" role="full" time="2026-08-19T23:15:10+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-var_accounts_tmout:var:1" value-id="xccdf_org.ssgproject.content_value_var_accounts_tmout"/>
+              <check-content-ref name="oval:ssg-accounts_tmout:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_file_permission_user_init_files" role="full" time="2026-08-19T23:15:10+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-var_user_initialization_files_regex:var:1" value-id="xccdf_org.ssgproject.content_value_var_user_initialization_files_regex"/>
+              <check-content-ref name="oval:ssg-file_permission_user_init_files:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_root_path_all_dirs" role="full" time="2026-08-19T23:15:10+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-root_path_all_dirs:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_accounts_umask_etc_bashrc" role="full" time="2026-08-19T23:15:10+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-var_accounts_user_umask:var:1" value-id="xccdf_org.ssgproject.content_value_var_accounts_user_umask"/>
+              <check-content-ref name="oval:ssg-accounts_umask_etc_bashrc:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_accounts_umask_etc_login_defs" role="full" time="2026-08-19T23:15:10+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-var_accounts_user_umask:var:1" value-id="xccdf_org.ssgproject.content_value_var_accounts_user_umask"/>
+              <check-content-ref name="oval:ssg-accounts_umask_etc_login_defs:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_accounts_umask_etc_profile" role="full" time="2026-08-19T23:15:10+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-var_accounts_user_umask:var:1" value-id="xccdf_org.ssgproject.content_value_var_accounts_user_umask"/>
+              <check-content-ref name="oval:ssg-accounts_umask_etc_profile:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_grub2_password" role="full" time="2026-08-19T23:15:10+01:00" severity="high" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-grub2_password:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_package_systemd-journal-remote_installed" role="full" time="2026-08-19T23:15:10+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-package_systemd-journal-remote_installed:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_journald_compress" role="full" time="2026-08-19T23:15:13+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-journald_compress:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_journald_storage" role="full" time="2026-08-19T23:15:13+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-journald_storage:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_firewalld_loopback_traffic_restricted" role="full" time="2026-08-19T23:15:17+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-firewalld_loopback_traffic_restricted:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_firewalld_loopback_traffic_trusted" role="full" time="2026-08-19T23:15:17+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-firewalld_loopback_traffic_trusted:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_all_accept_ra" role="full" time="2026-08-19T23:15:17+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-sysctl_net_ipv6_conf_all_accept_ra_value:var:1" value-id="xccdf_org.ssgproject.content_value_sysctl_net_ipv6_conf_all_accept_ra_value"/>
+              <check-content-ref name="oval:ssg-sysctl_net_ipv6_conf_all_accept_ra:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_all_accept_redirects" role="full" time="2026-08-19T23:15:17+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-sysctl_net_ipv6_conf_all_accept_redirects_value:var:1" value-id="xccdf_org.ssgproject.content_value_sysctl_net_ipv6_conf_all_accept_redirects_value"/>
+              <check-content-ref name="oval:ssg-sysctl_net_ipv6_conf_all_accept_redirects:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_all_accept_source_route" role="full" time="2026-08-19T23:15:17+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-sysctl_net_ipv6_conf_all_accept_source_route_value:var:1" value-id="xccdf_org.ssgproject.content_value_sysctl_net_ipv6_conf_all_accept_source_route_value"/>
+              <check-content-ref name="oval:ssg-sysctl_net_ipv6_conf_all_accept_source_route:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_all_forwarding" role="full" time="2026-08-19T23:15:17+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-sysctl_net_ipv6_conf_all_forwarding_value:var:1" value-id="xccdf_org.ssgproject.content_value_sysctl_net_ipv6_conf_all_forwarding_value"/>
+              <check-content-ref name="oval:ssg-sysctl_net_ipv6_conf_all_forwarding:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_default_accept_ra" role="full" time="2026-08-19T23:15:17+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-sysctl_net_ipv6_conf_default_accept_ra_value:var:1" value-id="xccdf_org.ssgproject.content_value_sysctl_net_ipv6_conf_default_accept_ra_value"/>
+              <check-content-ref name="oval:ssg-sysctl_net_ipv6_conf_default_accept_ra:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_default_accept_redirects" role="full" time="2026-08-19T23:15:18+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-sysctl_net_ipv6_conf_default_accept_redirects_value:var:1" value-id="xccdf_org.ssgproject.content_value_sysctl_net_ipv6_conf_default_accept_redirects_value"/>
+              <check-content-ref name="oval:ssg-sysctl_net_ipv6_conf_default_accept_redirects:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_default_accept_source_route" role="full" time="2026-08-19T23:15:18+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-sysctl_net_ipv6_conf_default_accept_source_route_value:var:1" value-id="xccdf_org.ssgproject.content_value_sysctl_net_ipv6_conf_default_accept_source_route_value"/>
+              <check-content-ref name="oval:ssg-sysctl_net_ipv6_conf_default_accept_source_route:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_accept_redirects" role="full" time="2026-08-19T23:15:18+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-sysctl_net_ipv4_conf_all_accept_redirects_value:var:1" value-id="xccdf_org.ssgproject.content_value_sysctl_net_ipv4_conf_all_accept_redirects_value"/>
+              <check-content-ref name="oval:ssg-sysctl_net_ipv4_conf_all_accept_redirects:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_accept_source_route" role="full" time="2026-08-19T23:15:18+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-sysctl_net_ipv4_conf_all_accept_source_route_value:var:1" value-id="xccdf_org.ssgproject.content_value_sysctl_net_ipv4_conf_all_accept_source_route_value"/>
+              <check-content-ref name="oval:ssg-sysctl_net_ipv4_conf_all_accept_source_route:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_log_martians" role="full" time="2026-08-19T23:15:18+01:00" severity="unknown" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-sysctl_net_ipv4_conf_all_log_martians_value:var:1" value-id="xccdf_org.ssgproject.content_value_sysctl_net_ipv4_conf_all_log_martians_value"/>
+              <check-content-ref name="oval:ssg-sysctl_net_ipv4_conf_all_log_martians:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_rp_filter" role="full" time="2026-08-19T23:15:18+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-sysctl_net_ipv4_conf_all_rp_filter_value:var:1" value-id="xccdf_org.ssgproject.content_value_sysctl_net_ipv4_conf_all_rp_filter_value"/>
+              <check-content-ref name="oval:ssg-sysctl_net_ipv4_conf_all_rp_filter:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_secure_redirects" role="full" time="2026-08-19T23:15:18+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-sysctl_net_ipv4_conf_all_secure_redirects_value:var:1" value-id="xccdf_org.ssgproject.content_value_sysctl_net_ipv4_conf_all_secure_redirects_value"/>
+              <check-content-ref name="oval:ssg-sysctl_net_ipv4_conf_all_secure_redirects:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_accept_redirects" role="full" time="2026-08-19T23:15:18+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-sysctl_net_ipv4_conf_default_accept_redirects_value:var:1" value-id="xccdf_org.ssgproject.content_value_sysctl_net_ipv4_conf_default_accept_redirects_value"/>
+              <check-content-ref name="oval:ssg-sysctl_net_ipv4_conf_default_accept_redirects:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_log_martians" role="full" time="2026-08-19T23:15:18+01:00" severity="unknown" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-sysctl_net_ipv4_conf_default_log_martians_value:var:1" value-id="xccdf_org.ssgproject.content_value_sysctl_net_ipv4_conf_default_log_martians_value"/>
+              <check-content-ref name="oval:ssg-sysctl_net_ipv4_conf_default_log_martians:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_rp_filter" role="full" time="2026-08-19T23:15:18+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-sysctl_net_ipv4_conf_default_rp_filter_value:var:1" value-id="xccdf_org.ssgproject.content_value_sysctl_net_ipv4_conf_default_rp_filter_value"/>
+              <check-content-ref name="oval:ssg-sysctl_net_ipv4_conf_default_rp_filter:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_secure_redirects" role="full" time="2026-08-19T23:15:18+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-sysctl_net_ipv4_conf_default_secure_redirects_value:var:1" value-id="xccdf_org.ssgproject.content_value_sysctl_net_ipv4_conf_default_secure_redirects_value"/>
+              <check-content-ref name="oval:ssg-sysctl_net_ipv4_conf_default_secure_redirects:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_icmp_echo_ignore_broadcasts" role="full" time="2026-08-19T23:15:18+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-sysctl_net_ipv4_icmp_echo_ignore_broadcasts_value:var:1" value-id="xccdf_org.ssgproject.content_value_sysctl_net_ipv4_icmp_echo_ignore_broadcasts_value"/>
+              <check-content-ref name="oval:ssg-sysctl_net_ipv4_icmp_echo_ignore_broadcasts:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_icmp_ignore_bogus_error_responses" role="full" time="2026-08-19T23:15:18+01:00" severity="unknown" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-sysctl_net_ipv4_icmp_ignore_bogus_error_responses_value:var:1" value-id="xccdf_org.ssgproject.content_value_sysctl_net_ipv4_icmp_ignore_bogus_error_responses_value"/>
+              <check-content-ref name="oval:ssg-sysctl_net_ipv4_icmp_ignore_bogus_error_responses:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_tcp_syncookies" role="full" time="2026-08-19T23:15:18+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-export export-name="oval:ssg-sysctl_net_ipv4_tcp_syncookies_value:var:1" value-id="xccdf_org.ssgproject.content_value_sysctl_net_ipv4_tcp_syncookies_value"/>
+              <check-content-ref name="oval:ssg-sysctl_net_ipv4_tcp_syncookies:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_send_redirects" role="full" time="2026-08-19T23:15:18+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-sysctl_net_ipv4_conf_all_send_redirects:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_send_redirects" role="full" time="2026-08-19T23:15:18+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-sysctl_net_ipv4_conf_default_send_redirects:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_ip_forward" role="full" time="2026-08-19T23:15:18+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-sysctl_net_ipv4_ip_forward:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_service_nftables_disabled" role="full" time="2026-08-19T23:15:24+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-service_nftables_disabled:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_kernel_module_cramfs_disabled" role="full" time="2026-08-19T23:15:40+01:00" severity="low" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-kernel_module_cramfs_disabled:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_kernel_module_freevxfs_disabled" role="full" time="2026-08-19T23:15:40+01:00" severity="low" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-kernel_module_freevxfs_disabled:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_kernel_module_hfs_disabled" role="full" time="2026-08-19T23:15:40+01:00" severity="low" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-kernel_module_hfs_disabled:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_kernel_module_hfsplus_disabled" role="full" time="2026-08-19T23:15:40+01:00" severity="low" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-kernel_module_hfsplus_disabled:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_kernel_module_jffs2_disabled" role="full" time="2026-08-19T23:15:40+01:00" severity="low" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-kernel_module_jffs2_disabled:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_kernel_module_usb-storage_disabled" role="full" time="2026-08-19T23:15:40+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-kernel_module_usb-storage_disabled:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_mount_option_dev_shm_nodev" role="full" time="2026-08-19T23:15:40+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-mount_option_dev_shm_nodev:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_mount_option_dev_shm_noexec" role="full" time="2026-08-19T23:15:40+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-mount_option_dev_shm_noexec:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_mount_option_dev_shm_nosuid" role="full" time="2026-08-19T23:15:40+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-mount_option_dev_shm_nosuid:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_kernel_yama_ptrace_scope" role="full" time="2026-08-19T23:15:40+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-sysctl_kernel_yama_ptrace_scope:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_coredump_disable_backtraces" role="full" time="2026-08-19T23:15:40+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-coredump_disable_backtraces:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_coredump_disable_storage" role="full" time="2026-08-19T23:15:40+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-coredump_disable_storage:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_sysctl_kernel_randomize_va_space" role="full" time="2026-08-19T23:15:40+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-sysctl_kernel_randomize_va_space:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_package_cron_installed" role="full" time="2026-08-19T23:15:40+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-package_cron_installed:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_file_permissions_cron_d" role="full" time="2026-08-19T23:15:43+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-file_permissions_cron_d:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_file_permissions_cron_daily" role="full" time="2026-08-19T23:15:43+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-file_permissions_cron_daily:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_file_permissions_cron_hourly" role="full" time="2026-08-19T23:15:43+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-file_permissions_cron_hourly:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_file_permissions_cron_monthly" role="full" time="2026-08-19T23:15:43+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-file_permissions_cron_monthly:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_file_permissions_cron_weekly" role="full" time="2026-08-19T23:15:43+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-file_permissions_cron_weekly:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_file_permissions_crontab" role="full" time="2026-08-19T23:15:43+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-file_permissions_crontab:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_file_at_allow_exists" role="full" time="2026-08-19T23:15:43+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-file_at_allow_exists:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_file_cron_allow_exists" role="full" time="2026-08-19T23:15:43+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-file_cron_allow_exists:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_file_cron_deny_not_exist" role="full" time="2026-08-19T23:15:43+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-file_cron_deny_not_exist:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+          <rule-result idref="xccdf_org.ssgproject.content_rule_chronyd_run_as_chrony_user" role="full" time="2026-08-19T23:15:48+01:00" severity="medium" weight="1.000000">
+            <result>fail</result>
+            <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+              <check-content-ref name="oval:ssg-chronyd_run_as_chrony_user:def:1" href="#oval0"/>
+            </check>
+          </rule-result>
+</arf:asset-report-collection>
