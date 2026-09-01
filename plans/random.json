@@ -1,0 +1,141 @@
+{
+  "strategy": "random",
+  "generated_at": "2026-09-01T23:28:18.570215+00:00",
+  "order": [
+    {
+      "id": "aide_periodic_cron_checking",
+      "ansible_task_ref": "playbooks/almalinux9-playbook-cis_server_l1.yml#aide_periodic_cron_checking",
+      "disruption_risk": "high",
+      "touches": [
+        {
+          "type": "file",
+          "name": "/etc/crontab"
+        }
+      ],
+      "health_checks": [
+        "crond_active"
+      ],
+      "rollback_available": true
+    },
+    {
+      "id": "sshd_disable_root_login",
+      "ansible_task_ref": "playbooks/almalinux9-playbook-cis_server_l1.yml#sshd_disable_root_login",
+      "disruption_risk": "high",
+      "touches": [
+        {
+          "type": "file",
+          "name": "/etc/ssh/sshd_config"
+        },
+        {
+          "type": "service",
+          "name": "sshd"
+        }
+      ],
+      "health_checks": [
+        "ssh_reachable"
+      ],
+      "rollback_available": true
+    },
+    {
+      "id": "accounts_tmout",
+      "ansible_task_ref": "playbooks/almalinux9-playbook-cis_server_l1.yml#accounts_tmout",
+      "disruption_risk": "low",
+      "touches": [
+        {
+          "type": "file",
+          "name": "/etc/profile"
+        }
+      ],
+      "health_checks": [],
+      "rollback_available": true
+    },
+    {
+      "id": "accounts_passwords_pam_faillock_deny",
+      "ansible_task_ref": "playbooks/almalinux9-playbook-cis_server_l1.yml#accounts_passwords_pam_faillock_deny",
+      "disruption_risk": "high",
+      "touches": [
+        {
+          "type": "file",
+          "name": "/etc/pam.d/system-auth"
+        }
+      ],
+      "health_checks": [
+        "ssh_reachable"
+      ],
+      "rollback_available": true
+    },
+    {
+      "id": "accounts_umask_etc_profile",
+      "ansible_task_ref": "playbooks/almalinux9-playbook-cis_server_l1.yml#accounts_umask_etc_profile",
+      "disruption_risk": "low",
+      "touches": [
+        {
+          "type": "file",
+          "name": "/etc/profile"
+        }
+      ],
+      "health_checks": [],
+      "rollback_available": true
+    },
+    {
+      "id": "package_aide_installed",
+      "ansible_task_ref": "playbooks/almalinux9-playbook-cis_server_l1.yml#package_aide_installed",
+      "disruption_risk": "medium",
+      "touches": [
+        {
+          "type": "package",
+          "name": "aide"
+        }
+      ],
+      "health_checks": [
+        "aide_binary_exists"
+      ],
+      "rollback_available": true
+    },
+    {
+      "id": "accounts_passwords_pam_faillock_unlock_time",
+      "ansible_task_ref": "playbooks/almalinux9-playbook-cis_server_l1.yml#accounts_passwords_pam_faillock_unlock_time",
+      "disruption_risk": "high",
+      "touches": [
+        {
+          "type": "file",
+          "name": "/etc/pam.d/system-auth"
+        }
+      ],
+      "health_checks": [
+        "ssh_reachable"
+      ],
+      "rollback_available": true
+    },
+    {
+      "id": "firewalld_loopback_traffic_restricted",
+      "ansible_task_ref": "playbooks/almalinux9-playbook-cis_server_l1.yml#firewalld_loopback_traffic_restricted",
+      "disruption_risk": "high",
+      "touches": [
+        {
+          "type": "service",
+          "name": "firewalld"
+        }
+      ],
+      "health_checks": [
+        "firewalld_active"
+      ],
+      "rollback_available": true
+    },
+    {
+      "id": "firewalld_loopback_traffic_trusted",
+      "ansible_task_ref": "playbooks/almalinux9-playbook-cis_server_l1.yml#firewalld_loopback_traffic_trusted",
+      "disruption_risk": "high",
+      "touches": [
+        {
+          "type": "service",
+          "name": "firewalld"
+        }
+      ],
+      "health_checks": [
+        "firewalld_active"
+      ],
+      "rollback_available": true
+    }
+  ]
+}
