@@ -1,26 +1,25 @@
-# Autonomous Compliance Remediation Engine
+# Autonomous Compliance Remediation Planning Engine
 
-A collaborative research prototype for AlmaLinux 9 that parses OpenSCAP compliance scan results, models remediation interactions using a dependency graph, and evaluates risk-aware execution strategies.
+A research prototype for AlmaLinux 9 that parses OpenSCAP compliance scan results, models remediation interactions using a dependency graph, and evaluates risk-aware execution strategies via simulation-based validation.
 
 ## Project Structure
 
-This repository is split into two distinct, decoupled tracks:
+This repository focuses strictly on compliance intelligence, planning, and simulation. Live hypervisor execution, VM snapshotting, and real system rollbacks are reserved for the full thesis phase and are excluded from this prototype boundary.
 
-*   **Planner Track (Student 1):** Parses OpenSCAP ARF/XCCDF XML results, extracts system touches from Ansible tasks, and uses a directed graph to generate safe execution sequences.
-*   **Executor Track (Student 2):** Consumes the generated sequence, handles VirtualBox snapshots, executes tasks on the target VM, and triggers automated rollbacks if health checks fail.
+*   **Planner Track:** Parses OpenSCAP ARF/XCCDF XML results, mechanically extracts system touches from Ansible tasks, and constructs a Directed Acyclic Graph (DAG) to generate safe execution sequences.
+*   **Simulation Track:** A lightweight deterministic mock executor (`simulator/run_mock.py`) that consumes the generated sequence and triggers a simulated state corruption crash upon encountering mutually exclusive constraints, verifying the planner's safety logic.
 
 ## Ordering Strategies
 
 The planner generates execution plans (`plan.json`) based on three distinct strategies to support a comparative experiment:
 
-1.  `random`: A baseline randomized sequence using a fixed seed.
-2.  `severity_only`: A baseline sequence ordered strictly by compliance severity, ignoring system disruption.
-3.  `dependency_aware`: A proposed heuristic strategy that enforces topological ordering for dependencies and uses disruption risk as a tie-breaker.
+1.  `random`: A baseline randomized sequence using an explicitly recorded random seed for reproducibility.
+2.  `severity_only`: A naive baseline sequence ordered strictly by compliance severity (`high` -> `medium` -> `low`), ignoring dependencies and potential operational conflicts.
+3.  `dependency_aware`: A proposed heuristic strategy that enforces topological ordering for dependencies, algorithmically resolves conflicts by dropping conflicting nodes, and uses disruption risk (`low` -> `medium` -> `high`) as a tie-breaker.
 
 ## Requirements
 
 *   Python 3.10+
-*   Target VM: AlmaLinux 9 (Minimal, Headless) with `openscap-scanner`
 
 ### Python Dependencies
 
