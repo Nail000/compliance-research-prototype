@@ -3,7 +3,7 @@
 A research prototype for AlmaLinux 9 that parses OpenSCAP compliance scan results, models interactions between remediations as a dependency graph, and compares ordering strategies in a simulation.
 
 **▶ Demo:** [Terminal demo (asciinema)](https://asciinema.org/a/IqsRsJF3czMA40am), a simulated firewall conflict handled by the planner
-**📄 Docs:** [Architecture](architecture.md) · [Results and limitations](results.md)
+**📄 Docs:** [Architecture](architecture.md) · [Results and limitations](evaluation/results.md)
 
 ## Scope
 
@@ -37,7 +37,7 @@ The pipeline uses a manually curated YAML file (`control_definitions.yaml`) mapp
 
 ## Results and limitations
 
-Full details are in [results.md](results.md). In short:
+Full details are in [results.md](evaluation/results.md). In short:
 
 - The simulation is **deterministic** and uses a **hand-authored conflict**, so results are identical on every run.
 - It demonstrates the planner's logic on that scenario. It does **not** evaluate the planner on real systems.
