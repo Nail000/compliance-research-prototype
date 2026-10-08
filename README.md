@@ -3,7 +3,7 @@
 A research prototype for AlmaLinux 9 that parses OpenSCAP compliance scan results, models interactions between remediations as a dependency graph, and compares ordering strategies in a simulation.
 
 **▶ Demo:** [Terminal demo (asciinema)](https://asciinema.org/a/IqsRsJF3czMA40am), a simulated firewall conflict handled by the planner
-**📄 Docs:** [Architecture](architecture.md) · [Results and limitations](evaluation/results.md)
+**📄 Docs:** [Architecture](ARCHITECTURE.md) · [Results and limitations](evaluation/results.md)
 
 ## Scope
 
